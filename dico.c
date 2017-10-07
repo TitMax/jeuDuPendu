@@ -1,12 +1,10 @@
 /*
 dico.c
 ------------
-
 Par (nom de l'auteur du programme)
-Date de création :  29/09/2017
-Date de la dernière modification : 29/09/2017
-
-Rôle : Fonction pour trouver un mot aléatoire dans le dico
+Date de crÃ©ation :  29/09/2017
+Date de la derniÃ¨re modification : 29/09/2017
+RÃ´le : Fonction pour trouver un mot alÃ©atoire dans le dico
 */
 
 #include <stdio.h>
@@ -27,7 +25,7 @@ int motAleatoire (char *motSecret)
 
     if (dico != NULL)
     {
-        // On compte le nombre de mots présent dans le fichier
+        // On compte le nombre de mots prÃ©sent dans le fichier
         do
         {
             caractereActuel = fgetc(dico);
@@ -35,11 +33,11 @@ int motAleatoire (char *motSecret)
             nombreDeMots++;
         } while (caractereActuel != EOF);
 
-        // On génère un nombre aléatoire
+        // On gÃ©nÃ¨re un nombre alÃ©atoire
         srand(time(NULL));
         roulette = rand() % nombreDeMots;
 
-        rewind(dico);   // On retourne au début du fichier
+        rewind(dico);   // On retourne au dÃ©but du fichier
 
         while (i < roulette)
         {

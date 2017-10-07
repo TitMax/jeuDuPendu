@@ -1,6 +1,7 @@
 ﻿Jeu du Pendu
 par Tit Max
 Date de création : 29/09/2017
+Date de la dernière modification : 30/09/2017
 ===========
 
 29/09/2017 à 19h32.
